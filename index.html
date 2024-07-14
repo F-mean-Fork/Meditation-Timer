@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditation Timer</title>
+    <script src=".\\app.js" defer></script>
+    <script src=".\\bg_app.js" defer></script>
     <link rel="icon" type="image/png" href=".\\favicon\\favicon2.png">
     <link rel="stylesheet" href=".\\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <script src="bg_app.js"></script>
+    <div class="wrapper">
+        <div class="logo img">
+            <img src=".\\img\\logo.png" alt="logo">
+            <p>Meditaion Timer</p>
+        </div>
+        <form class="timer" onsubmit="app.submit(event)">
+            <div class="info">
+                Установите медитацию на
+                <input type="number" name="time" aria-label="число минут для медитации" value="10">
+                минут
+            </div>
+            <div class="countDown">
+                <div class="num" id="min_tens">0</div>
+                <div class="num" id="min">0</div>
+                <div class="dots">:</div>
+                <div class="num" id="sec_tens">0</div>
+                <div class="num" id="sec">0</div>
+            </div>
+            <button type="submit" class="button">
+                <img src=".\\img\\Play-icon.svg" alt="play icon">
+                Запустисть таймер
+            </button>
+        </form>
+    </div>
 </body>
 </html>

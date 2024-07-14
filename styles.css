@@ -1,0 +1,119 @@
+body {
+    font-family: "Roboto Mono", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:antiquewhite;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fonr-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+:root {
+    --primary: rgba(108, 56, 204, 1);
+    --ati-accent: rgba(124, 124, 138, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper{
+    padding: 30px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo img{
+    margin-right: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+.logo p{
+    font-weight: 700;
+    font-size: large;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.info{
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.info input{
+    background: none;
+    border: none;
+    width: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ati-accent);
+    padding: 5px 10px;
+}
+
+.info input::-webkit-outer-spin-button,
+.info input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* .info input[type="number"]{
+    -moz-appearance: textfield;
+} */
+
+
+.countDown{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.num{
+    font-family: "Roboto Mono", monospace;
+    font-size: 160px;
+    line-height: 1;
+    background-color: rgba(41, 41, 46, 1);
+    padding: 40px 16px;
+    border-radius: 8px;
+}
+
+.dots{
+    font-family: "Roboto Mono", monospace; 
+    font-size: 160px;
+    color: var(--primary); 
+}
+
+.button{
+    background: var(--primary); 
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    color:antiquewhite;
+    gap: 10px;
+    padding: 17px;
+    width: 100%;
+    cursor: pointer;
+}
